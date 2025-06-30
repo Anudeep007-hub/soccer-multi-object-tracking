@@ -77,7 +77,7 @@ This project enables consistent player and ball tracking in soccer match videos,
 > *This is the raw input video with **distracting** bounding boxes and no proper tracking yet:*
 
 ```html
-<video src="videos/Initial_video.mp4" controls width="600"></video>
+<video src="output_videos/Initial_YOLO_DeepSORT.mp4" controls width="600"></video>
 ```
 
 ---
@@ -86,7 +86,7 @@ This project enables consistent player and ball tracking in soccer match videos,
 
 | YOLO + ByteTrack                                                                                 | YOLO + DeepSORT (MobileNet)                                                                               |
 | ------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------- |
-| <video src="videos/YOLO_ByteTrack.mp4" controls width="400"></video><br>**Run time:** \~12.3 sec | <video src="videos/YOLO_DeepSORT_Mobilenet.mp4" controls width="400"></video><br>**Run time:** \~15.8 sec |
+| <video src="output_videos/YOLO_ByteTracker.mp4" controls width="400"></video><br>**Run time:** \~4.78 sec | <video src="output_videos/YOLO_DeepSORT_mobilenet.mp4" controls width="400"></video><br>**Run time:** \~4.86 sec |
 
 ---
 
@@ -95,8 +95,8 @@ This project enables consistent player and ball tracking in soccer match videos,
 > *This video uses different bounding box styles compared to the above methods:*
 
 ```html
-<video src="videos/Inbuilt_YOLO_BoTSORT.mp4" controls width="600"></video><br>
-**Run time:** ~10.5 sec
+<video src="output_videos/Inbuilt_YOLO_BoTSORT.avi" controls width="600"></video><br>
+**Run time:** ~28.28 sec
 ```
 
 ---
@@ -116,7 +116,7 @@ This project enables consistent player and ball tracking in soccer match videos,
 
 # IMPORTANT NOTE
 
-If you are reviewing this project (e.g., internship reviewers), please note:
+If you are reviewing this project, please note:
 
 * Pese create a folder "models" after cloning.
 * Model file (`best.pt`) must be placed inside `models/`
