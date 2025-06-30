@@ -78,7 +78,7 @@ This project enables consistent player and ball tracking in soccer match videos,
 
 > *This is the raw input video with **distracting** bounding boxes and no proper tracking yet:*
 
-[▶️ Watch Initial Video](https://drive.google.com/file/d/12ur9PlVxo_9kyG-NAL7uQBZBOrPYdUmD/view?usp=sharing)
+[▶️ Watch Initial Video](https://drive.google.com/file/d/1pylkWE4-xCj78Mgs6q_btwKXmNabPlLW/view?usp=sharing)
 
 ---
 
