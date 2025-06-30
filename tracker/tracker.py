@@ -40,7 +40,7 @@ class Tracker:
         batch_size = 20
         detections = []
         for i in range(0, len(frames), batch_size):
-            detections_batch = self.model.predict(frames[i:i+batch_size], conf=0.1)
+            detections_batch = self.model.predict(frames[i:i+batch_size], conf=0.6)
             detections += detections_batch  
         return detections
     

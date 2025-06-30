@@ -6,6 +6,7 @@ import cv2
 import numpy as np
 import os 
 import datetime 
+import time
 
 ## Local imports
 from utils import read_video, save_video 
@@ -103,11 +104,32 @@ if __name__ == "__main__":
     )
     
     s = input("Choose one\n1-ByteTrack, 2-DeepSORT, 3-BotSORT\n ") 
+    
+    # make sure logs folder exists
+    os.makedirs("logs", exist_ok=True)
+
+    start_time = time.time()
+
     if s == '1':
         main_2(byte_tracker_instance)
+        tracker_name = "ByteTrack"
     elif s == '2':
         main_2(deep_sort_instance)
+        tracker_name = "DeepSort"
     elif s == '3':
         run_yolo_botsort_tracking(MODEL_PATH, INPUT_VIDEO_PATH)
+        tracker_name = "BoT-SORT"
     else:
-        print("Enter the valid input!!")
+        print("Enter a valid input!!")
+        tracker_name = None
+
+    end_time = time.time()
+    time_taken = end_time - start_time
+
+    if tracker_name:
+        timestamp = datetime.datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
+        log_filename = f"logs/{tracker_name}--elapsed_{timestamp}.log"
+        with open(log_filename, "w") as log_file:
+            log_file.write(f"{tracker_name} execution completed in {time_taken:.2f} seconds.\n")
+
+    print(f"{tracker_name} took {time_taken:.2f} seconds.") if tracker_name else None

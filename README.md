@@ -46,7 +46,8 @@ Soccer Player &amp; Ball Multi-Object Tracking with YOLOv8 + DeepSORT, ByteTrack
 
    ```bash
    python main.py
-   ```
+   ``` 
+
 
    You will see three options to select from. Choose one, and wait for a few minutes for processing to complete (execution time depends on your system’s computational power — using a GPU is highly recommended).
 
