@@ -14,7 +14,9 @@ from AssignTeam import TeamAssigner
 
 
 os.makedirs("output_videos", exist_ok=True)
+os.makedirs("input_videos", exist_ok=True)
 os.makedirs("stubs", exist_ok=True)
+os.makedirs("models", exist_ok=True)
 
 timestamp = datetime.datetime.now().strftime("%Y-%m-%d__%H-%M")
 OUTPUT_VIDEO_PATH = os.path.join("output_videos", f"output_video_{timestamp}.mp4")
