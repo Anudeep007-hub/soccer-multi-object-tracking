@@ -1,0 +1,7 @@
+ultralytics 
+opencv-python 
+scikit-learn
+deep-sort-realtime
+supervision
+pandas
+numpy
