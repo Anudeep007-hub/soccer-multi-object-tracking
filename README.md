@@ -72,32 +72,38 @@ This project enables consistent player and ball tracking in soccer match videos,
 
 # 🎥 Demo Videos
 
-## 📌 Initial Video
+## 🎥 Demo Videos
+
+### 📌 Initial Video
 
 > *This is the raw input video with **distracting** bounding boxes and no proper tracking yet:*
 
-```html
-<video src="output_videos/Initial_YOLO_DeepSORT.mp4" controls width="600"></video>
-```
+[▶️ Watch Initial Video](https://drive.google.com/file/d/12ur9PlVxo_9kyG-NAL7uQBZBOrPYdUmD/view?usp=sharing)
 
 ---
 
-## 📌 Comparison of Tracking Results
+### 📌 YOLO + ByteTrack
 
-| YOLO + ByteTrack                                                                                 | YOLO + DeepSORT (MobileNet)                                                                               |
-| ------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------- |
-| <video src="output_videos/YOLO_ByteTracker.mp4" controls width="400"></video><br>**Run time:** \~4.78 sec | <video src="output_videos/YOLO_DeepSORT_mobilenet.mp4" controls width="400"></video><br>**Run time:** \~4.86 sec |
+[▶️ Watch YOLO + ByteTrack](https://drive.google.com/file/d/1IHcE9agV7A3BKTZphJFt7t4jD3T_xZRj/view?usp=sharing)  
+**Run time:** ~4.78 sec
 
 ---
 
-## 📌 YOLO + BoTSORT
+### 📌 YOLO + DeepSORT (MobileNet)
+
+[▶️ Watch YOLO + DeepSORT (MobileNet)](https://drive.google.com/file/d/1xtu_T6fFWL6O-slPQWbFYz5xGHkE8qTG/view?usp=sharing)  
+**Run time:** ~4.86 sec
+
+---
+
+### 📌 YOLO + BoTSORT
 
 > *This video uses different bounding box styles compared to the above methods:*
 
-```html
-<video src="output_videos/Inbuilt_YOLO_BoTSORT.avi" controls width="600"></video><br>
+[▶️ Watch YOLO + BoTSORT](https://drive.google.com/file/d/12ur9PlVxo_9kyG-NAL7uQBZBOrPYdUmD/view?usp=sharing)  
 **Run time:** ~28.28 sec
-```
+
+> **Note**: All these video files are also included in the `output_videos` folder of this repository for local viewing or offline playback.
 
 ---
 
