@@ -74,10 +74,10 @@ class Tracker:
             
             ## Convert GoalKeepr to player, later using embeddings we will identify him correctly
             ## Else remove this below flow loop 
-            for object_ind, class_id in enumerate(detection_supervision.class_id):
-                if cls_names[class_id] == 'goalkeeper':
-                    detection_supervision.class_id[object_ind] = cls_name_inv["player"]
-            # Track obejcts
+            # for object_ind, class_id in enumerate(detection_supervision.class_id):
+            #     if cls_names[class_id] == 'goalkeeper':
+            #         detection_supervision.class_id[object_ind] = cls_name_inv["player"]
+            # # Track obejcts
             
             detections_with_tracks = self.tracker.update_with_detections(detection_supervision )
             
